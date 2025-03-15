@@ -18,4 +18,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 7880
 
 # Run the application
-CMD ["python", "agent.py"]
+CMD ["python", "agent.py","start"]

@@ -11,6 +11,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY . .
 
+# Download required files
+RUN python agent.py download-files
+
 # Environment variables
 ENV PYTHONUNBUFFERED=1
 

@@ -58,7 +58,7 @@ async def entrypoint(ctx: JobContext):
         vad=ctx.proc.userdata["vad"],
         stt=openai.STT(base_url="https://stt.appautomation.cloud/v1",api_key=os.getenv("STT_API_KEY"),model="whisper-1"),
         llm=openai.LLM(base_url="https://api.cerebras.ai/v1",api_key=os.environ.get("CEREBRAS_API_KEY"),model="llama3.1-8b",),
-        tts=openai.TTS(base_url="https://tts.appautomation.cloud/v1",api_key=os.getenv("TTS_API_KEY"),voice="de-DE-SeraphinaMultilingualNeural",LANGUAGE="de-DE"),
+        tts=openai.TTS(base_url="https://tts.appautomation.cloud/v1",api_key=os.getenv("TTS_API_KEY"),voice="de-DE-SeraphinaMultilingualNeural"),
         chat_ctx=initial_ctx,
         turn_detector=turn_detector.EOUModel(),
     )

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  agent:
+    build: .
+    container_name: livekit-agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "7880:7880"

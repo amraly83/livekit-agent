@@ -2,3 +2,4 @@ livekit-agents>=0.12.17
 livekit-plugins-openai[vertex]>=0.10.10,<1.0.0
 livekit-plugins-silero>=0.7.5
 python-dotenv~=1.0
+livekit-plugins-turn-detector>=0.4.3
